@@ -2,7 +2,7 @@
 # General Site Settings
 
 title: 向日葵日記
-description: 太陽(目標)という一つのものを、向日葵(ぼくら)は常に向き続ける・・・。 # this means to ignore newlines until "baseurl:"
+description: 福岡県立宗像中学校・高等学校 電気物理部のブログです。 # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://munakata-epc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
