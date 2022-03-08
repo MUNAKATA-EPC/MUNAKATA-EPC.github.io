@@ -1,0 +1,60 @@
+#-------------------------------
+# General Site Settings
+
+title: 向日葵日記
+description: 太陽(目標)という一つのものを、向日葵(ぼくら)は常に向き続ける・・・。 # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://munakata-epc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+#-------------------------------
+# About Section
+author-name: MUNAKATA-EPC
+author-avatar: icon.jpg
+
+
+#-------------------------------
+# Contact links
+twitter:  # Add your Facebook handle
+github: https://github.com/MUNAKATA-EPC
+
+
+#-------------------------------
+# Instagram Feed
+instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+
+#-------------------------------
+# Build settings
+markdown: kramdown
+permalink: ':title/'
+plugins:
+  - jekyll-paginate
+
+paginate: 7
+paginate_path: "/page/:num"
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+timezone: Asia/Tokyo
+
+#-------------------------------
+# Exclude from processing.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
