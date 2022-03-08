@@ -3,7 +3,7 @@ layout: post
 title:  "九州ブロックまでのヘラクレス"
 date:   2022-01-30
 image:  2022-01-30.jfif
-tags:   [ヘラクレス][RCJ]
+tags:   [ヘラクレス] [RCJ]
 ---
 ## 九州ブロック優勝しました
 
