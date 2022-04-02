@@ -31,9 +31,9 @@
   {% endif %}
 
   {% if page.image %}
-  <meta name="twitter:image" content="https://munakata-epc.github.io/img/{{ page.image }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.image }}" />
   {% else %}
-  <meta name="twitter:image" content="https://munakata-epc.github.io/img/logo.jpg?" />
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/logo.jpg?" />
   {% endif %}
 
   <style>
