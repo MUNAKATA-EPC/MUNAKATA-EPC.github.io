@@ -10,7 +10,7 @@ permalink: /links/
 
 - [INPUT](http://rcjinput.blog.jp/)
 
-- [ZakLab | 極私的プロダクト公開所](https://www.zaklab.jp/)
+- [ZakLab](https://www.zaklab.jp/)
 
 - [Seeed Wiki](https://wiki.seeedstudio.com/)
 
