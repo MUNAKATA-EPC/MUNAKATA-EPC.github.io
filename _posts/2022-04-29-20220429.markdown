@@ -11,7 +11,7 @@ Hercules_2022のソフトウェア開発を担当していた[R.P.](https://twit
 
 こんな感じです。C言語(Arduino言語と言った方が正しいかも)マジで何にも理解していないし、フォルダ構造も何もかも適当だし、挙句の果てにはgoto文使いまくってて、「お前何年ロボカップやってたんだよ」ってくらい出来は酷いですが、動いたしヨシ！ってことで許してください...
 
-<center><script src="https://gist-it.appspot.com/https://github.com/MUNAKATA-EPC/Hercules_2022/blob/main/KEIHANNA_MAIN-teensy40/src/main.cpp"></script></center>
+<center><script src="https://gist.github.com/RP-800/2b92a5685c0b7b8285cbdab0febf20ea.js"></script></center>
 
 なかなかシンプルな見た目になってるんじゃないかなぁと(書いた本人は)思っています。かなりマメにコメント書いてるつもりなので、これ読んでわからないところはヘッダファイルの中身とライブラリの詳細だと思います。以下にそれぞれ詳細を記します。
 
