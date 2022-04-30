@@ -11,7 +11,7 @@ Hercules_2022のソフトウェア開発を担当していた[R.P.](https://twit
 
 こんな感じです。C言語(Arduino言語と言った方が正しいかも)マジで何にも理解していないし、フォルダ構造も何もかも適当だし、挙句の果てにはgoto文使いまくってて、「お前何年ロボカップやってたんだよ」ってくらい出来は酷いですが、動いたしヨシ！ってことで許してください...
 
-<center><script src="https://gist.github.com/RP-800/2b92a5685c0b7b8285cbdab0febf20ea.js"></script></center>
+<center><script src="https://gist.github.com/RP-800/f66526eb4292c0b45d98ce51f3fdf1e8.js"></script></center>
 
 なかなかシンプルな見た目になってるんじゃないかなぁと(書いた本人は)思っています。かなりマメにコメント書いてるつもりなので、これ読んでわからないところはヘッダファイルの中身とライブラリの詳細だと思います。以下にそれぞれ詳細を記します。
 
@@ -51,16 +51,25 @@ Hercules_2022のソフトウェア開発を担当していた[R.P.](https://twit
 
 ### Serial_receive()
 
+<center><script src="https://gist.github.com/RP-800/c3a9121539e72c01dbb16b0ecaf5c3a7.js"></script></center>
+
 名前の通り、サブマイコンと通信して得られた各種センサのデータを得るための関数です。こいつの処理はSerial_receive.hの中でやってます。
 
 ### pid()
+
+<center><script src="https://gist.github.com/RP-800/d6d82fccc98204b9b9b9a2265f9ca1f1.js"></script></center>
+
 名前の通り、PID制御をする関数です。それ以上でも以下でもないです。ここではモーターの出力にどれだけ足し引きするかの計算をやってます。pid.hの中身を見てみてください。
 
 ### Motor(int direction)
 
+<center><script src="https://gist.github.com/RP-800/152f671789566500e9a8f063d7586769.js"></script></center>
+
 モーター制御関数です。directionは方向指示値です。1は方向修正、2は前進、3は後進...みたいな感じで割り当てています。motor.hの中で動かしてます。
 
 ### Move(int motor_rads, int motor_power)
+
+<center><script src="https://gist.github.com/RP-800/d04c94350faa504b891c08f8e0cf7d23.js"></script></center>
 
 これもモーター制御関数です。上記の関数と違うところはローカル変数名からも分かるように角度で制御できるところです(motor_powerはここでは無視してもらって大丈夫です)。まあ、私たちが使っているのはジョンミンモーターなので、そこまできれいに角度で制御出来てはいませんでした。コアレスモーターとかBLDCとかなら綺麗に動くのかもしれません。
 
@@ -71,6 +80,8 @@ Hercules_2022のソフトウェア開発を担当していた[R.P.](https://twit
 Motor関数同様、motor.hの中に記述してます。
 
 ### print_LCD()
+
+<center><script src="https://gist.github.com/RP-800/38a201da76a3590d4364fe0f115ced1d.js"></script></center>
 
 名前の通りです。LCD表示のための関数です。工夫としては、試合用プログラムが走ってる状態のときはコマンド操作を受け付けないようにしています。また、モードを切り替えるとプログラムの実行状態が解除されるようにしています。文章だけでは「何言ってんだコイツ？」となると思いますので、これに関しては近いうちに動画でお見せできればと思います。print_LCD.hに書いてます。
 
