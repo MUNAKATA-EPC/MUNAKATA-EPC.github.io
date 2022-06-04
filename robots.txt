@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://munakata-epc.github.io/sitemap.xml
